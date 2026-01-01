@@ -16,8 +16,6 @@ import * as fs from 'node:fs'; // File system operations (read/write files)
 // The main Metalsmith library and plugins that transform your content
 import Metalsmith from 'metalsmith'; // The core static site generator
 import drafts from '@metalsmith/drafts'; // Excludes draft content from builds
-import collections from '@metalsmith/collections';
-
 import permalinks from '@metalsmith/permalinks'; // Creates clean URLs
 import menus from 'metalsmith-menu-plus'; // Generates navigation menus
 import layouts from '@metalsmith/layouts'; // Applies templates to content
