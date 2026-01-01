@@ -1,0 +1,146 @@
+/**
+ * Image Grid Component - Justified Gallery Layout
+ *
+ * A justified gallery where images in each row share the same height
+ * but have varying widths based on their aspect ratios.
+ * Layout is calculated by JavaScript for precise control.
+ */
+
+.image-grid {
+  /* Flexbox layout applied by JS for precise pixel control */
+  display: block;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin-block: 0;
+
+  .content {
+    display: block;
+  }
+
+  /* No-JS fallback: simple grid layout */
+  &:not(.is-laid-out) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 6px;
+
+    .image-grid-item {
+      opacity: 1;
+      aspect-ratio: 1;
+    }
+  }
+}
+
+/* Hide items until JS calculates layout to prevent flash */
+.image-grid:not(.is-laid-out) .image-grid-item {
+  opacity: 0;
+}
+
+/* Fade in once laid out */
+.image-grid.is-laid-out .image-grid-item {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.image-grid-item {
+  position: relative;
+  overflow: hidden;
+  /* Dimensions set by JS */
+}
+
+.image-grid-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-grid-figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  /* Handle picture element from responsive images */
+  picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+  }
+}
+
+/* Hover overlay */
+.image-grid-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-s);
+  background: var(--dark-screen);
+  color: var(--color-text-light);
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  text-align: center;
+
+  .details {
+    font-size: var(--font-sm);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+
+    h4 {
+      font-size: var(--font-p);
+      font-weight: 600;
+      margin-bottom: var(--space-s);
+    }
+    p {
+      line-height: 1;
+    }
+  }
+
+  /* Link indicator icon */
+  .icon {
+    position: absolute;
+    bottom: var(--space-s);
+    right: var(--space-s);
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
+
+    svg {
+      stroke: white;
+    }
+  }
+}
+
+/* Cursor indication for linked items */
+.image-grid-item.has-link {
+  cursor: pointer;
+}
+
+/* Show overlay on hover/focus */
+.image-grid-item:hover .image-grid-overlay {
+  opacity: 1;
+}
+
+/* Empty state */
+.image-grid-empty {
+  width: 100%;
+  text-align: center;
+  padding: var(--space-l);
+  color: var(--color-text-inactive);
+  font-style: italic;
+}
