@@ -23,6 +23,7 @@
   &.has-tall-image {
     img {
       max-height: 40rem; /* Override commons.css */
+      width: auto;
     }
   }
   /* Override commons.css .content flex layout for text-only sections */
