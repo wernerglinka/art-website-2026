@@ -56,11 +56,32 @@
     "link": "/works/2004.04.003"
   },
   {
+    "image": "2005/2005.01.001.jpg",
+    "title": "Object 2005.01.001",
+    "description": "14 x 18 inches, Acrylic and mixed media on wood panel.",
+    "date": "2005",
+    "link": "/works/2005.01.001"
+  },
+  {
+    "image": "2005/2005.01.003.jpg",
+    "title": "Object 2005.01.003",
+    "description": "10 x 24 inches, Acrylic and mixed media on wood panel.",
+    "date": "2005",
+    "link": "/works/2005.01.003"
+  },
+  {
     "image": "/2005/2005.01.006.jpg",
     "title": "Object 2005.01.006",
     "details": "50 x 48 inches, Acrylic and mixed media on wood panel",
     "date": "2005",
     "link": "/works/2005.01.006"
+  },
+  {
+    "image": "2005/2005.02.001.jpg",
+    "title": "Object 2005.02.001",
+    "description": "8 x 18 inches, Acrylic and mixed media on wood panel.",
+    "date": "2005",
+    "link": "/works/2005.02.001"
   },
   {
     "image": "/2007/2007.01.001.jpg",
