@@ -21,6 +21,10 @@
 .text-only {
   /* limit too tall images so they don't dominate the page */
   &.has-tall-image {
+    p:first-child {
+      display: flex;
+      justify-content: center;
+    }
     img {
       max-height: 40rem; /* Override commons.css */
       width: auto;
