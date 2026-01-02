@@ -1,14 +1,13 @@
 {
-  "title": "Metalsmith2025 Structured Content Starter",
-  "description": "Starter to build Metalsmith websites with reusable structured content components.",
-  "url": "https://ms2025-structured-content-starter.netlify.app/",
+  "title": "Werner Glinka - Mixed Media Artist",
+  "description": "Mixed media assemblages by Werner Glinka, using found and discarded materials.",
+  "url": "https://wernerglinka,com/",
   "locale": "en_US",
 
-  "defaultImage": "/assets/images/metalsmith2025-starter-social.png",
+  "defaultImage": "/assets/images/artworks/2007/2007.01.001.jpg",
 
   "organization": {
-    "name": "Glinka",
-    "logo": "https://glinka.co/assets/images/wg-logo.svg",
+    "name": "Werner Glinka",
     "sameAs": [
       "https://wernerglinka.substack.com/",
       "https://bsky.app/profile/wernerglinka.bsky.social",
