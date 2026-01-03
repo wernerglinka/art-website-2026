@@ -44,7 +44,7 @@
 
   /* Glass Morphism */
   --glass-background: rgb(255 255 255 / 15%);
-  --glass-background-light: rgb(255 255 255 / 85%);
+  --glass-background-light: rgb(255 255 255 / 50%);
   --glass-background-dark: rgb(0 0 0 / 30%);
   --glass-background-dark-card: rgb(0 0 0 / 70%);
   --glass-backdrop-filter: blur(2px) saturate(180%);

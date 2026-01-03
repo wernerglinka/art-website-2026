@@ -19,6 +19,24 @@
  */
 
 .text-only {
+  /* Cardboard variant: 2x2 image grid that collapses to single column */
+  &.cardboard {
+    .prose p {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    }
+
+    .prose p {
+      margin: 0;
+    }
+
+    .prose img {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+    }
+  }
+
   /* limit too tall images so they don't dominate the page */
   &.has-tall-image {
     p:first-child {

@@ -60,7 +60,6 @@
   .text-wrapper {
     position: relative;
     flex-grow: 1;
-    margin-block-start: 10rem;
     padding: var(--space-s-m) var(--space-s-m) var(--space-l-xl);
     background-color: var(--glass-background-light);
 
@@ -76,11 +75,20 @@
     font-size: var(--font-h5);
     text-transform: uppercase;
     color: var(--color-text);
+    padding: 0.25rem;
+    background-color: var(--glass-background-light);
   }
 
+  .author-date {
+    color: var(--color-primary);
+    padding: 0.25rem;
+    background-color: var(--glass-background-light);
+  }
   .prose {
     font-size: var(--font-p);
     margin-block: var(--space-s-m) 0;
+    padding: 0.25rem;
+    background-color: var(--glass-background-light);
   }
 
   &.has-pattern {
