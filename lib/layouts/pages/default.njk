@@ -8,9 +8,9 @@
   <body class="{{ bodyClasses }}">
     <span id="top"></span>
     {% include "components/sections/header/header.njk" %}
-    {{ breadcrumbs(navigation.breadcrumbs) }}
 
-    <main>
+    <main class="transition-fade" id="swup">
+      {{ breadcrumbs(navigation.breadcrumbs) }}
       {% block body %}
         {# will be replaced by page content #}
       {% endblock %}
