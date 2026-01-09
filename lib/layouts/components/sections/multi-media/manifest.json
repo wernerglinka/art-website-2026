@@ -3,7 +3,7 @@
   "type": "section",
   "styles": ["multi-media.css"],
   "scripts": [],
-  "requires": ["ctas", "text", "image", "video", "audio", "icon", "lottie", "commons"],
+  "requires": ["ctas", "text", "icon", "commons"],
   "validation": {
     "required": ["sectionType", "mediaType"],
     "properties": {
@@ -13,7 +13,7 @@
       },
       "mediaType": {
         "type": "string",
-        "enum": ["image", "video", "audio", "icon", "lottie"]
+        "enum": ["image", "icon"]
       },
       "isReverse": {
         "type": "boolean"
